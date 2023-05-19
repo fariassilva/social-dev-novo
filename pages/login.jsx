@@ -4,6 +4,9 @@ import ImageWithSpace from "../rsc/components/layout/ImageWithSpace"
 import H1 from "../rsc/components/typography/H1"
 import H2 from "../rsc/components/typography/H2"
 import H4 from "../rsc/components/typography/H4"
+import Button from "../rsc/components/inputs/Button"
+import Input from "../rsc/components/inputs/Input"
+
 
 const FormContainer = styled.div`
 margin-top: 60px;
@@ -30,9 +33,9 @@ function LoginPage () {
         Entre em sua conta
         </H2>
         <Form>
-          <input placeholder="Email ou usuário"type="email" />
-          <input placeholder="Senha "type="password" />
-          <button>Entrar</button>
+          <Input label="Email ou usuário"type="email" />
+          <Input label="Senha "type="password" />
+          <Button>Entrar</Button>
 
         </Form>
         <Text>Não possui uma conta? <a href="#">Faça seu cadastro</a></Text>

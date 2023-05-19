@@ -18,7 +18,7 @@ height: 100vh;
 }
 `
 const StyledContainer = styled.div`
-background-color: white;
+background-color: ${props => props.theme.white};
 padding: 30px 50px;
 
 
