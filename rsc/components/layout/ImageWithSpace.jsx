@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const WIDTH_BREAK = '600px'
+const WIDTH_BREAK = '700px'
 
 const StyledFlex = styled.div`
 display: flex;
@@ -19,16 +19,20 @@ height: 100vh;
 `
 const StyledContainer = styled.div`
 background-color: white;
-padding: 30px;
+padding: 30px 50px;
 
 
 @media (min-width: ${WIDTH_BREAK}) {
-  width: 100%;
-  min-width: cal( ${WIDTH_BREAK} - 60px);
+  width: 50%;
+  min-width: cal( ${WIDTH_BREAK} - 100px);
 }
 @media (max-width: ${WIDTH_BREAK}){
-  width: 100%;
+  
 }
+
+display: flex;
+flex-direction: column;
+justify-content:center;
 `
 
 
